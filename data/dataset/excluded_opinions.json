@@ -1,0 +1,195 @@
+{
+  "799988": {
+    "case_name": "Halbert v. Michigan",
+    "scdb_id": "2004-073",
+    "date_filed": "2005-06-23",
+    "reasons": [
+      "unsegmented"
+    ],
+    "pairs": 44
+  },
+  "799992": {
+    "case_name": "Bell v. Thompson",
+    "scdb_id": "2004-077",
+    "date_filed": "2005-06-27",
+    "reasons": [
+      "unsegmented"
+    ],
+    "pairs": 44
+  },
+  "4838845": {
+    "case_name": "Texas v. New Mexico",
+    "scdb_id": "2017-032",
+    "date_filed": "2020-12-14",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 15
+  },
+  "146981": {
+    "case_name": "Robertson v. United States ex rel. Watson",
+    "scdb_id": "2009-057",
+    "date_filed": "2010-05-24",
+    "reasons": [
+      "below_min_words_after_trim"
+    ],
+    "pairs": 13
+  },
+  "2679835": {
+    "case_name": "Halliburton Co. v. Erica P. John Fund, Inc.",
+    "scdb_id": "2010-056",
+    "date_filed": "2014-06-23",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 18
+  },
+  "802972": {
+    "case_name": "American Tradition Partnership, Inc. v. Bullock",
+    "scdb_id": "2011-073",
+    "date_filed": "2012-06-25",
+    "reasons": [
+      "below_min_words_after_trim"
+    ],
+    "pairs": 2
+  },
+  "855518": {
+    "case_name": "Kirtsaeng v. John Wiley & Sons, Inc.",
+    "scdb_id": "2015-070",
+    "date_filed": "2013-03-19",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 32
+  },
+  "6479294": {
+    "case_name": "United States v. Washington",
+    "scdb_id": "2017-062",
+    "date_filed": "2022-06-21",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 7
+  },
+  "6479295": {
+    "case_name": "United States v. Taylor",
+    "scdb_id": "2015-040",
+    "date_filed": "2022-06-21",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 11
+  },
+  "8176305": {
+    "case_name": "Beckles v. United States",
+    "scdb_id": "2016-026",
+    "date_filed": "2017-03-06",
+    "reasons": [
+      "unsegmented"
+    ],
+    "pairs": 12
+  },
+  "9231296": {
+    "case_name": "Hernandez v. Mesa",
+    "scdb_id": "2016-043",
+    "date_filed": "2020-02-25",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 19
+  },
+  "9409091": {
+    "case_name": "United States v. Texas",
+    "scdb_id": "2015-065",
+    "date_filed": "2023-06-23",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 14
+  },
+  "4469126": {
+    "case_name": "Montana v. Wyoming",
+    "scdb_id": "2017-055",
+    "date_filed": "2018-02-20",
+    "reasons": [
+      "not_merits"
+    ],
+    "pairs": 6
+  },
+  "3195551": {
+    "case_name": "Franchise Tax Bd. of Cal. v. Hyatt",
+    "scdb_id": "2018-036",
+    "date_filed": "2016-04-19",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 9
+  },
+  "4512054": {
+    "case_name": "North Carolina v. Covington",
+    "scdb_id": "2016-078",
+    "date_filed": "2018-06-28",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 4
+  },
+  "4603641": {
+    "case_name": "Sturgeon v. Frost",
+    "scdb_id": "2015-038",
+    "date_filed": "2019-03-26",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 20
+  },
+  "4583334": {
+    "case_name": "Kennedy v. Bremerton School Dist.",
+    "scdb_id": "2021-061",
+    "date_filed": "2019-01-22",
+    "reasons": [
+      "wrong_case",
+      "not_merits"
+    ],
+    "pairs": 8
+  },
+  "9435902": {
+    "case_name": "King v. Brownback",
+    "scdb_id": "2020-016",
+    "date_filed": "2023-10-30",
+    "reasons": [
+      "wrong_case",
+      "not_merits"
+    ],
+    "pairs": 2
+  },
+  "6477112": {
+    "case_name": "Andrus v. Texas",
+    "scdb_id": "2019-069",
+    "date_filed": "2022-06-13",
+    "reasons": [
+      "wrong_case",
+      "not_merits"
+    ],
+    "pairs": 15
+  },
+  "4898457": {
+    "case_name": "Shinn v. Kayer",
+    "scdb_id": "2020-037",
+    "date_filed": "2021-07-08",
+    "reasons": [
+      "wrong_case"
+    ],
+    "pairs": 8
+  },
+  "6448818": {
+    "case_name": "Moore v. Harper",
+    "scdb_id": "2022-026",
+    "date_filed": "2022-03-07",
+    "reasons": [
+      "wrong_case",
+      "not_merits"
+    ],
+    "pairs": 6
+  }
+}

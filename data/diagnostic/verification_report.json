@@ -1,0 +1,54 @@
+{
+  "opinions": 30,
+  "windows": 298,
+  "candidates_with_span": 903,
+  "apparent_failure_pct": {
+    "exact": 75.9,
+    "normalised": 65.0,
+    "word": 53.5,
+    "artefact": 19.7
+  },
+  "validate_outcomes": {
+    "ok": 639,
+    "span_not_found": 175,
+    "answer_copies_span": 70,
+    "answer_length": 17,
+    "yes_no_answer": 1,
+    "span_too_short": 1
+  },
+  "review_file": "data\\diagnostic\\failures_for_review.jsonl",
+  "failures_to_classify": 178,
+  "classification": {
+    "citation_omitted": 81,
+    "page_furniture": 74,
+    "unmarked_omission": 13,
+    "encoding_artefact": 6,
+    "misquotation": 2,
+    "fabrication": 1,
+    "from_memory": 1
+  },
+  "fabrication": {
+    "count": 1,
+    "pct": 0.11,
+    "ci95_pct": [
+      0.0,
+      0.62
+    ]
+  },
+  "unfaithful_quotation": {
+    "count": 4,
+    "pct": 0.44,
+    "ci95_pct": [
+      0.12,
+      1.13
+    ]
+  },
+  "unmarked_omission": {
+    "count": 13,
+    "pct": 1.44,
+    "ci95_pct": [
+      0.77,
+      2.45
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+Algorithm 4  Compare the systems  (RQ3)
+
+Input   D_test, the test split;  A, the reference answers
+Output  per-system scores with intervals and floors, and paired comparisons
+
+G <- shuffle(A) so that no item keeps its own reference
+for each system in {B0, B1, B2, F1} do
+    H <- predictions of the system on D_test
+    diagnose(H)                           // empty, length ratio, duplicates
+    for each measure m in {ROUGE, METEOR, BERTScore, SBERT} do
+        v[m] <- m(A, H)                   // per-item scores
+        floor[m] <- m(G, H)               // this system against unrelated references
+        report mean of v[m], its bootstrap interval, and floor[m]
+for each system other than B2 do
+    d <- per-item difference against B2
+    resample d 2,000 times; report the mean and a two-sided p value
+repeat for training seeds 42, 1 and 2; report mean and SD across seeds

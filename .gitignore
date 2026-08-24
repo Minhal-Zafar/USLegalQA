@@ -1,0 +1,49 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Environment
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Dissertation, Word documents and write-ups (published separately)
+*.docx
+*.pdf
+~$*
+*.md
+docs/apply_corrections_to_docx.py
+docs/update_toc.ps1
+
+# Data: only the release files listed below are committed.
+# Caches, raw downloads, backups and superseded versions are regenerable.
+data/*
+!data/dataset/
+data/dataset/*
+!data/dataset/uslegalqa_v3_audited.jsonl
+!data/dataset/excluded_opinions.json
+!data/dataset/trimmed_opinions.json
+!data/dataset/splits/
+!data/cleaned/
+data/cleaned/*
+!data/cleaned/opinions_audited.jsonl
+!data/predictions/
+data/predictions/*.bak
+!data/results/
+data/results/*.txt
+!data/diagnostic/
+*.bak
+*.parquet
+*.duckdb
+
+# SCDB is freely downloadable; document the download instead
+SCDB_*.csv
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

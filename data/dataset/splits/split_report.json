@@ -1,0 +1,97 @@
+{
+  "seed": 42,
+  "ratios": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "note": "Opinion assignment is the v1 split (drawn before SCDB issue areas were backfilled, so not stratified by issue area for most opinions). Opinions and pairs removed by audit_corpus.py (wrong documents; text past the first separate writing) are dropped; no opinion moved between splits.",
+  "leakage": {
+    "pairs": 15001,
+    "opinions": 1075,
+    "mean_pairs_per_opinion": 14.0,
+    "pair_level_contamination": 0.9992,
+    "pair_level_trials": 20,
+    "opinion_level_contamination": 0.0
+  },
+  "splits": [
+    {
+      "split": "train",
+      "pairs": 12101,
+      "opinions": 860,
+      "question_types": {
+        "legal_principle": 6670,
+        "holding": 2872,
+        "facts": 1628,
+        "procedural": 532,
+        "outcome": 399
+      },
+      "categories": {
+        "criminal_procedure": 3275,
+        "economic_activity": 2325,
+        "civil_rights": 1954,
+        "judicial_power": 1276,
+        "first_amendment": 829,
+        "federalism": 711,
+        "due_process": 415,
+        "privacy": 366,
+        "unions": 310,
+        "miscellaneous": 179,
+        "attorneys": 151,
+        "federal_taxation": 147,
+        "interstate_relations": 97,
+        "private_action": 66
+      }
+    },
+    {
+      "split": "val",
+      "pairs": 1481,
+      "opinions": 107,
+      "question_types": {
+        "legal_principle": 836,
+        "holding": 358,
+        "facts": 183,
+        "procedural": 59,
+        "outcome": 45
+      },
+      "categories": {
+        "criminal_procedure": 448,
+        "economic_activity": 311,
+        "civil_rights": 283,
+        "judicial_power": 224,
+        "federalism": 77,
+        "first_amendment": 67,
+        "due_process": 32,
+        "privacy": 17,
+        "federal_taxation": 9,
+        "interstate_relations": 8,
+        "unions": 5
+      }
+    },
+    {
+      "split": "test",
+      "pairs": 1419,
+      "opinions": 108,
+      "question_types": {
+        "legal_principle": 794,
+        "holding": 325,
+        "facts": 198,
+        "outcome": 54,
+        "procedural": 48
+      },
+      "categories": {
+        "criminal_procedure": 390,
+        "civil_rights": 307,
+        "economic_activity": 239,
+        "first_amendment": 130,
+        "judicial_power": 100,
+        "privacy": 62,
+        "miscellaneous": 44,
+        "federalism": 39,
+        "unions": 39,
+        "attorneys": 36,
+        "due_process": 33
+      }
+    }
+  ]
+}

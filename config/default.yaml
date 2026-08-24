@@ -1,0 +1,103 @@
+# USLegalQA v3 — pipeline configuration
+# Every constant lives here. No magic numbers in source files.
+
+collect:
+  court: scotus
+  # Filter on date_filed (when the case was decided), NOT date_created
+  # (when CourtListener ingested the record). The v2 pipeline used the latter,
+  # so its "2005-2023" coverage claim did not describe the corpus.
+  date_from: "2005-01-01"
+  date_to: "2024-12-31"
+
+  # Only precedential opinions. Denials of certiorari and unpublished orders
+  # carry no reasoning and generate degenerate QA.
+  precedential_status: "Published"
+
+  # CourtListener opinion type codes. We keep ONLY authoritative statements of
+  # the Court's position as the primary text. Concurrences and dissents are
+  # retained separately (see keep_secondary) but never used to answer
+  # "what did the Court hold".
+  #
+  # VERIFY THESE ON FIRST RUN with `python -m uslegalqa.collect --probe`.
+  # Codes are from CourtListener's schema and may have changed.
+  primary_types: ["010combined", "020lead", "015unamimous", "025plurality"]
+  secondary_types: ["030concurrence", "035concurrenceinpart", "040dissent"]
+  keep_secondary: true
+
+  max_clusters: null        # null = no limit
+  page_size: 50
+  request_delay_s: 1.0      # raise if throttled; the client also self-throttles on 429
+  max_retries: 8
+  timeout_s: 180            # opinion payloads are large; generous timeout
+  opinion_page_size: 5      # server may ignore this; CourtListener appears to cap at 20
+  # Filter for restricting /opinions/ to specific clusters. Discover the
+  # correct spelling with: python -m uslegalqa.collect --probe-filters
+  cluster_filter: "cluster__id"
+
+clean:
+  # Run intra-document segmentation. Essential: `010combined` records contain
+  # the syllabus, majority, concurrences and dissents in one document, so
+  # without this the corpus attributes dissenting reasoning to the Court.
+  segment_combined: true
+  # Discard documents whose structure could not be parsed confidently. These
+  # are cases where no single majority opinion could be identified, so the
+  # binding text cannot be verified. Conservative exclusion is preferred to
+  # silently admitting text of uncertain provenance; the count is reported so
+  # it can be stated in the write-up.
+  drop_if_unconfident: true
+
+  min_words: 500            # measured on BINDING text, after segmentation
+  max_words: 80000
+  drop_if_no_primary: true  # discard clusters with no majority/lead opinion
+
+paths:
+  raw: "data/raw/clusters.jsonl"
+  cleaned: "data/cleaned/opinions.jsonl"
+  checkpoint: "data/raw/.collect_checkpoint.json"
+
+run:
+  seed: 42
+
+generate:
+  # Model that produces QA pairs. Recorded on every record as `generator`, so
+  # a second model can be run over a subset and the two compared. The v2 write-up
+  # named Claude Opus while the code used Haiku; provenance is now explicit.
+  model: "claude-haiku-4-5-20251001"
+  temperature: 0.3          # low: questions should follow the text, not invent
+  max_tokens: 3000
+  request_delay_s: 0.5
+
+  chunk_words: 900
+  chunk_overlap: 150
+  pairs_per_chunk: 3
+
+  # Validation. Applied once, at generation, rather than in a separate pass
+  # with different thresholds (v2 had three inconsistent length filters).
+  min_question_words: 8
+  max_question_words: 45
+  min_answer_words: 15
+  max_answer_words: 90
+  min_span_chars: 40
+  # Skip chunks whose prompt far exceeds the normal ~6,000 characters. These
+  # arise where an appendix or table extracted as a single unbroken paragraph
+  # cannot be split at a boundary, and are rejected by the API as malformed.
+  min_span_chars: 40             # shorter spans do not ground an answer
+  # Skip chunks whose prompt far exceeds the normal ~6,000 characters. These
+  # arise where an appendix or table extracted as a single unbroken paragraph
+  # cannot be split at a boundary, and are rejected by the API as malformed.
+  max_prompt_chars: 60000
+  # Halt if this many consecutive chunks yield nothing. A systemic fault
+  # (exhausted credit, revoked key) otherwise burns the whole corpus while
+  # reporting the result as skipped chunks.
+  abort_after_empty_chunks: 25
+  # Reject answers that transcribe the supporting span instead of explaining
+  # it (45.6% of pairs before this constraint). Measured as the longest run of
+  # consecutive shared words: a copied answer shares ~15, an explanatory one 1,
+  # and a legitimate partial quotation about 5. Bag-of-words overlap cannot
+  # separate these -- a verbatim copy plus three words scores only 0.84.
+  max_copied_run_words: 10
+
+  output: "data/dataset/uslegalqa_v3.jsonl"
+  # Released dataset: deduplicated, issue areas backfilled, and records failing
+  # audit_corpus.py (wrong document or unsegmented) removed. Input to split.py.
+  final: "data/dataset/uslegalqa_v3_audited.jsonl"

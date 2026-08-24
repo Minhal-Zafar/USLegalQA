@@ -1,0 +1,15 @@
+Algorithm 2  Locate a quoted span in its source  (RQ1)
+
+Input   span, the quotation;  text, the source window
+Output  character offsets of span in text, or undefined
+
+if text contains span exactly then return that position
+if span contains an ellipsis then
+    locate each part in order with a moving cursor
+    if every part is located then return first start, last end
+x <- alphanumeric characters of span, lowercased
+y, map <- alphanumeric characters of text, with offsets
+if x occurs in y then return map of that occurrence
+repeat the two lines above with star-pagination and footnote
+    markers blanked in both                // explicitly marked forms only
+return undefined

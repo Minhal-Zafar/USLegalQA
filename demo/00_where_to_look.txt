@@ -1,0 +1,34 @@
+WHERE TO LOOK IN THE REAL FILES
+==============================================================================
+
+Case: Baze v. Rees  553 U.S. 35
+
+1. THE DATASET RECORD
+   File: data\dataset\uslegalqa_v3_final.jsonl
+   Line: 3644
+   In VS Code, open the file, press Ctrl+G, type the line number.
+   That line is the complete record, including span_start and
+   span_end. The same line is copied to 01_raw_dataset_line.txt and
+   pretty printed in 02_pair_record.json.
+
+2. THE OPINION TEXT
+   File: data/cleaned/opinions.jsonl
+   Line: 215
+   This line holds the full text of the opinion as a JSON string.
+   Because it is one long line, character offsets into the text are
+   not the same as editor columns, which is why the marked copy in
+   03_opinion_marked.txt exists.
+
+3. THE SPAN IN PLACE
+   Open 03_opinion_marked.txt and search for:
+       SUPPORTING SPAN BEGINS
+   The text between the two markers is exactly the characters at
+   positions 1525 to 1791 of the opinion.
+
+4. THE PROOF
+   Open 04_proof.txt. It shows the stored span and the slice taken
+   from the opinion at those offsets, and whether they are identical.
+   Result for this pair: IDENTICAL = True
+
+5. TO CHECK WITHOUT ANY OF THIS TOOLING
+   python -c "import json;d=[json.loads(l) for l in open('data/dataset/uslegalqa_v3_final.jsonl',encoding='utf-8')];p=d[3643];o=[json.loads(l) for l in open('data/cleaned/opinions.jsonl',encoding='utf-8')];t=[x for x in o if x['cluster_id']==p['cluster_id']][0]['text'];print(t[p['span_start']:p['span_end']]==p['supporting_span'])"

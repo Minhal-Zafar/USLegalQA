@@ -1,0 +1,24 @@
+GROUNDING PROOF
+==============================================================================
+
+case            Baze v. Rees
+citation        553 U.S. 35
+SCDB case id    2007-031
+cluster id      145817
+
+QUESTION
+On what basis did the Court affirm the lower courts' rejection of the petitioners' constitutional challenge?
+
+ANSWER
+The Court held that the petitioners failed to meet their burden of proof. Specifically, they did not demonstrate that the risk of pain from improper administration of an admittedly humane procedure, combined with the state's refusal to adopt untested alternatives, rises to the level of cruel and unusual punishment prohibited by the Eighth Amendment.
+
+STORED OFFSETS  span_start = 1525, span_end = 1791
+
+SUPPORTING SPAN as stored with the answer
+We too agree that petitioners have not carried their burden of showing that the risk of pain from maladministration of a concededly humane lethal injection protocol, and the failure to adopt untried and untested alternatives, constitute cruel and unusual punishment.
+
+OPINION TEXT sliced at [1525:1791]
+We too agree that petitioners have not carried their burden of showing that the risk of pain from maladministration of a concededly humane lethal injection protocol, and the failure to adopt untried and untested alternatives, constitute cruel and unusual punishment.
+
+==============================================================================
+IDENTICAL: True

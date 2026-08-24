@@ -1,0 +1,29 @@
+Algorithm 1  Construct a span-grounded resource  (RQ1)
+
+Input   S, a release of the case database
+        C, a dated snapshot of opinion text
+        M, a generating model;  k, pairs requested per window
+Output  D, verified question answer pairs with source offsets
+
+D <- empty
+for each case s in S within the period of interest do
+    R <- records in C whose citation, or failing that name, matches s
+    if R is empty or a record's citation disagrees with s then continue
+    r <- the record in R with the most opinion text
+    if r was filed > 60 days from s's decision or is not a merits opinion then continue
+    T <- segment(r)                       // Reports headers, formulas, page headers
+    if T has no unique binding section then continue
+    t <- binding text of T, cut at the first separate writing
+    if |t| < 500 words then continue
+    W <- chunk(t, 900 words, 150 overlap)
+    for each window w in W do
+        b <- band(index of w, |W|)        // early, middle or late
+        P <- M(prompt(w, b, k))           // each p carries a quoted span
+        for each pair p in P do
+            loc <- locate(p.span, w)      // Algorithm 2
+            if loc is undefined then reject span_not_found; continue
+            if longest_common_run(p.answer, p.span) > 10 then
+                reject answer_copies_span; continue
+            p.start <- w.offset + loc.start;  p.end <- w.offset + loc.end
+            append p to D
+return D

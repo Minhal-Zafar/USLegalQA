@@ -1,0 +1,24 @@
+Algorithm 3  Measure what standard practice would report  (RQ2)
+
+3a  verification method against fabrication
+G <- 30 opinions drawn at random;  generate as in Algorithm 1, retaining every candidate
+for each method m in {exact, normalised, word sequence, artefact removal} do
+    f[m] <- fraction of candidates that m fails to locate
+classify by hand every candidate the final method rejects
+F <- fraction of all candidates classified as fabricated, with a 95% interval
+report f[m] for every m against the single value F
+
+3b  prompt and validation
+hold the model and its temperature constant
+q[pilot] <- quality signals under the original prompt
+q[release] <- quality signals of the released dataset
+c <- fraction of retained candidates rejected by the copy constraint
+report q[pilot] against q[release], with c
+
+3c  partition overlap
+for trial = 1 to 20 do
+    assign pairs at random to train, validation and test, 80 / 10 / 10
+    o[trial] <- fraction of test pairs whose opinion is in train
+assign whole opinions instead
+o_opinion <- the same fraction under that assignment
+report the mean of o against o_opinion

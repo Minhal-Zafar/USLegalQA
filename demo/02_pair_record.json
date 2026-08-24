@@ -1,0 +1,20 @@
+{
+  "cluster_id": 145817,
+  "case_name": "Baze v. Rees",
+  "date_filed": "2008-04-16",
+  "citation": "553 U.S. 35",
+  "category": "criminal_procedure",
+  "scdb_id": "2007-031",
+  "question": "On what basis did the Court affirm the lower courts' rejection of the petitioners' constitutional challenge?",
+  "answer": "The Court held that the petitioners failed to meet their burden of proof. Specifically, they did not demonstrate that the risk of pain from improper administration of an admittedly humane procedure, combined with the state's refusal to adopt untested alternatives, rises to the level of cruel and unusual punishment prohibited by the Eighth Amendment.",
+  "question_type": "holding",
+  "supporting_span": "We too agree that petitioners have not carried their burden of showing that the risk of pain from maladministration of a concededly humane lethal injection protocol, and the failure to adopt untried and untested alternatives, constitute cruel and unusual punishment.",
+  "span_start": 1525,
+  "span_end": 1791,
+  "chunk_index": 0,
+  "n_chunks": 9,
+  "chunk_position": "early",
+  "generator": "claude-haiku-4-5-20251001",
+  "generator_temperature": 0.3,
+  "scdb_issue_area_code": "1"
+}

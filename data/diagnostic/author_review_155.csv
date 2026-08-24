@@ -1,0 +1,156 @@
+case,case_name,suggested_class,author_class,author_note
+0,United States v. Clarke,citation_omitted,unmarked_omission,"Disagree with the suggestion. The 129 character gap removes a whole sentence of the Court's reasoning, that a non-complying taxpayer may face an enforcement action in district court, and the quotation carries no ellipsis at that point. The other gaps are editorial brackets and are benign."
+1,United States v. Clarke,page_furniture,page_furniture,"Gap is the page break, the case caption and the Opinion of the Court line. The bracket gaps are editorial insertions in the source."
+2,United States v. Clarke,page_furniture,page_furniture,"Gap is a Cite as line, a page number and the Opinion of the Court heading."
+3,United States v. Clarke,page_furniture,page_furniture,Gap is a Cite as line and the Opinion of the Court heading. Quotation otherwise verbatim.
+4,United States v. Clarke,citation_omitted,citation_omitted,Gap is a string citation to the Federal Appendix and to Tiffany Fine Arts. Quotation otherwise verbatim.
+5,United States v. Clarke,citation_omitted,citation_omitted,Same passage and same gap as case 4. Citation only.
+7,Republic of Iraq v. Beaty,citation_omitted,citation_omitted,"Gap is the source reference for the veto message, a Weekly Compilation citation."
+8,Republic of Iraq v. Beaty,page_furniture,page_furniture,"Gap is a footnote block following the rule line, carrying the eighth proviso of EWSAA section 1503."
+10,Republic of Iraq v. Beaty,citation_omitted,citation_omitted,"Gaps are a reporter citation to sections 1604 and 1330(a) and a Cite as header. Both benign; classed by the citation, which is the substantive omission."
+11,Republic of Iraq v. Beaty,page_furniture,page_furniture,Gap is a footnote on the sunset date followed by a Cite as header.
+12,Fry v. Napoleon Community Schools,citation_omitted,citation_omitted,"Gap is a citation to Honig v. Doe with a parenthetical aside by the Court about acronyms. The aside is commentary, not reasoning."
+13,Fry v. Napoleon Community Schools,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+15,Fry v. Napoleon Community Schools,citation_omitted,citation_omitted,Gaps are a Cite as header and two statutory citations. The quotation marks its omissions with ellipses.
+16,Fry v. Napoleon Community Schools,page_furniture,page_furniture,Gap is a Cite as header only. Same passage as case 15 quoted at greater length.
+17,Fry v. Napoleon Community Schools,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+18,Fry v. Napoleon Community Schools,citation_omitted,citation_omitted,Gap is a citation to the Sixth Circuit opinion with an explanatory parenthetical. The quotation marks the omission with an ellipsis.
+19,James v. United States,citation_omitted,citation_omitted,Gaps are a Taylor citation and a passage the quotation marks with an ellipsis.
+20,James v. United States,citation_omitted,citation_omitted,Gap is a citation to Shepard quoting Taylor.
+21,James v. United States,citation_omitted,citation_omitted,Gap is a citation to Jones v. State.
+22,James v. United States,citation_omitted,citation_omitted,Gaps are a citation to Taylor and an em dash pair rendered as byte 0x97. Both benign.
+23,Gall v. United States,citation_omitted,citation_omitted,Gaps are citations to the Eighth Circuit opinion and to Claiborne.
+26,League of United Latin American Citizens v. Perry,encoding_artefact,encoding_artefact,Source holds byte 0x9E where the quotation has the section sign. Not a difference in wording.
+27,League of United Latin American Citizens v. Perry,citation_omitted,unmarked_omission,"Disagree with the suggestion. The 287 character gap removes a parenthetical on how appellants are referred to and a sentence recording that the court entered judgment and issued findings, with no ellipsis in the quotation. The section sign gap is an encoding artefact."
+28,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gaps are citations to Session and a pair of em dashes rendered as the mojibake sequence for that character.
+29,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gaps are short Id. citations.
+30,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,"Gaps are a section sign encoding artefact, an editorial bracket, and a long citation to De Grandy quoting Growe and Gingles."
+31,League of United Latin American Citizens v. Perry,encoding_artefact,encoding_artefact,Section sign encoding artefact and an editorial bracket. Same passage as case 30 without the citation.
+32,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gaps are a citation to Session and a citation to the Lichtman expert report.
+33,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gaps are citations to Session and to the separate opinion of Judge Ward.
+34,League of United Latin American Citizens v. Perry,encoding_artefact,encoding_artefact,Section sign encoding artefact only.
+35,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,"Gap is a citation with an explanatory parenthetical, plus a section sign encoding artefact."
+36,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Three section sign encoding artefacts and a citation to Abrams.
+37,League of United Latin American Citizens v. Perry,encoding_artefact,encoding_artefact,Section sign encoding artefact only.
+38,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gaps are an Id. citation and a section sign encoding artefact.
+39,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gap is a citation to Miller v. Johnson together with a section sign encoding artefact.
+40,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,"Gap is a citation to the opinion of the Chief Justice, plus a section sign encoding artefact."
+41,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gap is a citation to the Lichtman report.
+43,League of United Latin American Citizens v. Perry,encoding_artefact,encoding_artefact,Section sign encoding artefact only.
+44,League of United Latin American Citizens v. Perry,citation_omitted,citation_omitted,Gaps are a citation to Session and a section sign encoding artefact.
+46,Torres v. Texas Department of Public Safety,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+47,Torres v. Texas Department of Public Safety,citation_omitted,citation_omitted,"Gaps are a Federalist citation, a Cite as header, and a passage the quotation marks with an ellipsis."
+48,Torres v. Texas Department of Public Safety,page_furniture,page_furniture,"Gap is the case caption and the Opinion of the Court line, plus an editorial bracket."
+49,Torres v. Texas Department of Public Safety,citation_omitted,citation_omitted,Gap is a citation to PennEast and to the dissent.
+50,United States v. Tinklenberg,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+51,United States v. Tinklenberg,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+52,United States v. Tinklenberg,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+53,United States v. Tinklenberg,citation_omitted,citation_omitted,Gap is a citation to section 3161(h)(1)(D).
+54,United States v. Tinklenberg,citation_omitted,citation_omitted,"Long gaps, but the quotation marks each omission with an ellipsis. What remains are a string citation of Courts of Appeals decisions, a Cite as header and a citation to General Dynamics."
+55,United States v. Tinklenberg,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+56,United States v. Tinklenberg,citation_omitted,citation_omitted,"Gaps are the case caption with the Opinion of the Court line, and a citation to Howeisen and American Tobacco. Classed by the citation."
+57,United States v. Tinklenberg,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+58,United States v. Tinklenberg,citation_omitted,citation_omitted,Gaps are a citation to Bloate and a Cite as header for the opinion of Justice Scalia.
+59,Gonzales v. O Centro Espírita Beneficente União Do Vegetal,citation_omitted,citation_omitted,Gap is a short Id. citation.
+60,Gonzales v. O Centro Espírita Beneficente União Do Vegetal,citation_omitted,unmarked_omission,"Disagree with the suggestion. The 230 character gap removes the Court's statement of the standard of review, that legal rulings are reviewed de novo and the injunction for abuse of discretion, with no ellipsis. That is reasoning, not a citation, although a McCreary County citation sits inside the same gap."
+62,Credit Suisse Securities (USA) LLC v. Billing,encoding_artefact,encoding_artefact,"Gap is the HTML entity for an ampersand where the quotation has the character itself, plus an editorial bracket."
+63,Gamble v. United States,page_furniture,unmarked_omission,"Disagree with the suggestion. The 935 character gap joins two separate passages with the word and, dropping the Grady and Dixon discussion and the 1791 definition of offence in between, with no ellipsis. Not page furniture."
+64,Gamble v. United States,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+65,Gamble v. United States,page_furniture,page_furniture,Gap is a Cite as header plus two editorial brackets.
+66,Gamble v. United States,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+68,Gamble v. United States,page_furniture,page_furniture,"Gap is a footnote block following the rule line, on the 1543 statute and the Court of Chivalry."
+69,Gamble v. United States,page_furniture,page_furniture,Gap is an editorial bracket and a footnote block following the rule line.
+70,Gamble v. United States,citation_omitted,citation_omitted,Gap is a citation to Roche in Leach and English Reports.
+71,Gamble v. United States,page_furniture,page_furniture,"Gap is a footnote giving an alternative report of the decision, followed by the case caption and the Opinion of the Court line."
+72,Gamble v. United States,page_furniture,page_furniture,"Gap is a footnote citing Wharton and MacNally, followed by the case caption and the Opinion of the Court line."
+73,Lagos v. United States,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+74,Lagos v. United States,page_furniture,page_furniture,Gap is an editorial bracket and the case caption with the Opinion of the Court line.
+75,Lagos v. United States,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+76,Boumediene v. Bush,citation_omitted,citation_omitted,Gaps are citations to the appendix to the petition for certiorari.
+78,Panetti v. Quarterman,citation_omitted,citation_omitted,Gap is a citation to the first appendix.
+79,Panetti v. Quarterman,citation_omitted,unmarked_omission,"Disagree with the suggestion. The 378 character gap removes the Court's explanation that the dilemma extends to prisoners with no early sign of mental illness and that counsel would be obliged to file unripe applications, with no ellipsis. The Martinez-Villareal citation in the other gap is benign."
+80,Panetti v. Quarterman,citation_omitted,citation_omitted,Gap is a citation to Slack v. McDaniel and Felker v. Turpin.
+81,Panetti v. Quarterman,citation_omitted,citation_omitted,Gap is a citation to Ford at 426.
+82,Panetti v. Quarterman,citation_omitted,citation_omitted,Gap is a citation to Ford at 424 and 427.
+84,Panetti v. Quarterman,citation_omitted,citation_omitted,"Gap is a footnote of the dissent commenting that law professors are not medical experts, containing an ante citation. Commentary in a footnote rather than reasoning in the body."
+85,Panetti v. Quarterman,citation_omitted,citation_omitted,Gap is a citation to the Ford plurality opinion.
+88,Panetti v. Quarterman,citation_omitted,citation_omitted,Gaps are two editorial brackets and a citation to the District Court order.
+90,"Fourth Estate Pub. Benefit Corp. v. Wall-Street.com, LLC",page_furniture,page_furniture,Gap is the two line case caption and the Opinion of the Court line.
+91,"Fourth Estate Pub. Benefit Corp. v. Wall-Street.com, LLC",citation_omitted,citation_omitted,Gap is a citation to the Eleventh Circuit decision followed by a sentence recording that the Register refused registration. Procedural fact attached to the citation rather than reasoning.
+92,"Fourth Estate Pub. Benefit Corp. v. Wall-Street.com, LLC",page_furniture,page_furniture,Gap is the two line case caption and the Opinion of the Court line.
+93,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are an editorial bracket and citations to the District Court opinion and the Third Geneva Convention.
+94,Hamdan v. Rumsfeld,page_furniture,citation_omitted,"Disagree with the suggestion. The 1064 character gap is a string citation to Felker, Durousseau and Klein with explanatory parentheticals. It contains no running header or footnote block, so citation_omitted rather than page_furniture."
+95,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are an Id. citation and a citation to Field v. Mans with a parenthetical.
+96,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap runs across a page boundary and contains a Cite as header, the Opinion of the Court line and a footnote rule."
+98,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap is a footnote block following the rule line, quoting the motion to dismiss."
+99,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are citations to New v. Cohen and to Councilman.
+100,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap is a footnote block following the rule line, distinguishing service personnel from civilians."
+101,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gap is an Id. citation to the majority opinion.
+105,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gaps are editorial brackets and a footnote block with the case caption and the Opinion of Justice Stevens line.
+107,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gap is a post citation with the note that the citation was omitted.
+108,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap is a footnote block following the rule line, on the evolutionary nature of the common law."
+109,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap contains a Winthrop citation and further discussion of his list of offences. Accepting the suggestion, but noting the gap includes substantive discussion as well as the citation."
+110,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+111,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap is a footnote block quoting the Yamashita dissenters, plus an editorial bracket."
+112,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is an editorial bracket and the case caption with the Opinion of the Court line.
+113,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gap is a footnote block following the rule line, on deference to a subsection (b) determination."
+114,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are a footnote block citing the Geneva Convention commentary and a citation to Hamdi. Classed by the citation.
+115,Hamdan v. Rumsfeld,page_furniture,page_furniture,"Gaps are a footnote marker, an editorial bracket and a footnote block on the President's statement about the Taliban."
+116,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are a footnote on the French text of Article 66 and two post citations to the concurrence.
+117,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are a citation to Loving v. United States and a Cite as header for the Kennedy opinion.
+118,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gaps are an ante citation and an editorial bracket.
+119,Hamdan v. Rumsfeld,citation_omitted,citation_omitted,Gap is a citation to Webster's Third New International Dictionary.
+120,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is the case caption and the Kennedy concurring line.
+121,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is a Cite as header and the Kennedy concurring line.
+122,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is the case caption and the Kennedy concurring line.
+123,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is a Cite as header and the Kennedy concurring line.
+124,Hamdan v. Rumsfeld,page_furniture,page_furniture,Gap is the case caption and the Kennedy concurring line.
+125,"Altria Group, Inc. v. Good",citation_omitted,citation_omitted,"Gaps are editorial brackets, a passage the quotation marks with an ellipsis, and a footnote quoting the MUTPA."
+126,"Altria Group, Inc. v. Good",page_furniture,page_furniture,"Gap is a passage the quotation marks with an ellipsis, followed by the case caption and the Opinion of the Court line."
+127,"Altria Group, Inc. v. Good",citation_omitted,citation_omitted,"Gaps are three editorial brackets, a citation to the District Court opinion quoting Reilly, and a case caption."
+128,"Altria Group, Inc. v. Good",citation_omitted,citation_omitted,Gap is a short Id. citation.
+129,"Altria Group, Inc. v. Good",citation_omitted,citation_omitted,Gap is a citation to the Cipollone plurality.
+131,"Altria Group, Inc. v. Good",page_furniture,page_furniture,"Gap is a Cite as header with the Thomas dissenting line, plus an editorial bracket."
+132,"Altria Group, Inc. v. Good",page_furniture,page_furniture,Gap is the case caption and the Thomas dissenting line.
+133,"Altria Group, Inc. v. Good",citation_omitted,citation_omitted,"Gaps are an ante citation and a case caption. Classed by the citation, which comes first in the passage."
+134,"Altria Group, Inc. v. Good",page_furniture,page_furniture,Gap is a Cite as header and the Thomas dissenting line.
+135,"Altria Group, Inc. v. Good",page_furniture,page_furniture,Gap is an editorial bracket and a footnote block on the position of the United States as amicus.
+136,Turner v. Rogers,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+137,Turner v. Rogers,citation_omitted,citation_omitted,Gap is a short Id. citation.
+138,Turner v. Rogers,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+139,Turner v. Rogers,page_furniture,page_furniture,Gap is an editorial bracket and the case caption with the Opinion of the Court line.
+140,Turner v. Rogers,page_furniture,page_furniture,Gap is a Cite as header and the Thomas dissenting line.
+141,Turner v. Rogers,page_furniture,page_furniture,Gap is a Cite as header and the Thomas dissenting line.
+142,Turner v. Rogers,citation_omitted,citation_omitted,Gaps are citations to the Assessing Arrears report and the Michigan Supreme Court task force report.
+143,Turner v. Rogers,page_furniture,page_furniture,"Gap is a footnote block following the rule line, on the Deadbeat Parents Punishment Act."
+144,Turner v. Rogers,citation_omitted,page_furniture,"Disagree with the suggestion. The gap is a Cite as line, a page number and the Thomas dissenting heading, which is running header rather than a citation."
+145,Burton v. Stewart,citation_omitted,citation_omitted,Gap is a citation to Martinez-Villareal.
+146,"Romag Fasteners, Inc. v. Fossil, Inc.",page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+147,"Romag Fasteners, Inc. v. Fossil, Inc.",citation_omitted,citation_omitted,"Gaps are a citation to the bad faith intent provisions with a parenthetical, and a case caption."
+148,"Romag Fasteners, Inc. v. Fossil, Inc.",page_furniture,page_furniture,"Gaps are a Black's Law Dictionary citation spanning a Cite as header, and a list of equity treatises."
+150,House v. Bell,citation_omitted,citation_omitted,Gaps are Id. citations and blocks of trial transcript that the quotation marks with an ellipsis.
+151,House v. Bell,citation_omitted,citation_omitted,Gap is a short Id. citation.
+152,House v. Bell,citation_omitted,citation_omitted,Gaps are a citation to Schlup quoting Friendly and a reporter citation.
+153,House v. Bell,citation_omitted,citation_omitted,Gap is a short Id. citation.
+154,Tapia v. United States,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+155,Tapia v. United States,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+156,Tapia v. United States,citation_omitted,citation_omitted,Gap is a citation to Mistretta.
+157,Tapia v. United States,page_furniture,page_furniture,Gap is an editorial bracket and the case caption with the Opinion of the Court line.
+158,Tapia v. United States,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line.
+160,Tapia v. United States,page_furniture,page_furniture,Gap is a Cite as header and an editorial bracket.
+161,Tapia v. United States,citation_omitted,citation_omitted,Gap is a short Id. citation.
+162,"Sereboff v. Mid Atlantic Medical Services, Inc.",citation_omitted,citation_omitted,Gap is a citation to Palmer on restitution with a parenthetical.
+163,Negusie v. Holder,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
+164,Negusie v. Holder,citation_omitted,citation_omitted,Gaps are two editorial brackets and a citation to the appendix to the petition.
+165,Negusie v. Holder,citation_omitted,citation_omitted,Gaps are a citation to Dia v. Ashcroft and the case caption with the Scalia concurring line.
+166,Alleyne v. United States,page_furniture,page_furniture,"Gap is a Cite as header with the Opinion of Justice Thomas line, plus editorial brackets."
+167,Alleyne v. United States,citation_omitted,citation_omitted,Gaps are an Id. citation and a case caption with two opinion lines.
+168,Alleyne v. United States,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of Justice Thomas line.
+169,Alleyne v. United States,citation_omitted,citation_omitted,Gap is a citation to Apprendi and to the Harris dissent.
+170,Alleyne v. United States,citation_omitted,citation_omitted,Gaps are citations to the Harris and O'Brien opinions of Justice Thomas and to his Apprendi concurrence.
+172,Azar v. Garza,page_furniture,page_furniture,Gap is a Cite as header and the Per Curiam line.
+173,Burlington Northern & Santa Fe Railway Co. v. United States,citation_omitted,citation_omitted,"Gaps are a citation to the appendix carrying an editorial bracket, and a footnote on tank failures and the definition of free on board."
+174,Burlington Northern & Santa Fe Railway Co. v. United States,citation_omitted,citation_omitted,Gaps are an editorial bracket and an Ibid. citation.
+175,Burlington Northern & Santa Fe Railway Co. v. United States,page_furniture,page_furniture,Gap is the case caption and the Opinion of the Court line together with the surrounding procedural narrative.
+176,Burlington Northern & Santa Fe Railway Co. v. United States,citation_omitted,citation_omitted,Gaps are an editorial bracket and citations to Crawford and Perrin.
+177,Burlington Northern & Santa Fe Railway Co. v. United States,page_furniture,page_furniture,Gap is a Cite as header and the Opinion of the Court line.
