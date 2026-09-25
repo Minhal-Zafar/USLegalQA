@@ -1,0 +1,8 @@
+# Building the dataset: collection, cleaning, audit, generation, split.
+#   pip install -r requirements-data.txt
+requests>=2.32
+PyYAML>=6.0
+python-dotenv>=1.0
+duckdb>=1.1          # reads the COLD Cases parquet snapshot (collect_cold.py)
+anthropic>=0.40      # question generation (generate.py, verify_diagnostic.py)
+scipy>=1.11          # confidence intervals (verify_diagnostic.py)

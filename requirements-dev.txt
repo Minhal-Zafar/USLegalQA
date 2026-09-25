@@ -1,0 +1,23 @@
+# Evaluation, figures and tests, on top of the data requirements.
+#   pip install -r requirements-dev.txt
+-r requirements-data.txt
+
+# Evaluation (evaluate.py, eval_sbert.py, baselines.py)
+numpy>=1.26
+rouge-score>=0.1.2
+bert-score>=0.3.13
+sentence-transformers>=3.0
+nltk>=3.8            # METEOR
+torch>=2.2
+transformers>=4.44
+
+# Figures (USLegalQA_Figures.ipynb)
+matplotlib>=3.8
+pillow>=10.0
+jupyter>=1.0
+
+# Tests
+pytest>=8.0
+
+# Fine-tuning (f1test notebook) runs on Kaggle and installs its own
+# peft, trl, accelerate and bitsandbytes.
