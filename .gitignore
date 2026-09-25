@@ -14,7 +14,7 @@ __pycache__/
 *.docx
 *.pdf
 ~$*
-*.md
+docs/*.md
 docs/apply_corrections_to_docx.py
 docs/update_toc.ps1
 

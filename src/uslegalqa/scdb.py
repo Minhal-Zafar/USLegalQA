@@ -3,7 +3,7 @@
 Records are joined on U.S. Reports citation, with case name as a fallback.
 
 Download (free, no registration):
-    http://scdb.wustl.edu/data.php
+    https://scdb.la.psu.edu/data/
     Choose: Modern Database -> Case Centered -> Citation  ->  CSV
 
 Usage:
@@ -106,7 +106,7 @@ def load_scdb(path: Path) -> tuple[dict, dict]:
                 f"SCDB file is missing columns: {sorted(missing)}\n"
                 f"Found: {reader.fieldnames}\n"
                 "Download the *Case Centered / Citation* CSV from "
-                "http://scdb.wustl.edu/data.php"
+                "https://scdb.la.psu.edu/data/"
             )
 
         for row in reader:
@@ -223,7 +223,7 @@ def main() -> None:
     scdb_path = Path(args.scdb)
     if not scdb_path.exists():
         sys.exit(f"SCDB file not found: {scdb_path}\n"
-                 "Download from http://scdb.wustl.edu/data.php "
+                 "Download from https://scdb.la.psu.edu/data/ "
                  "(Modern Database -> Case Centered -> Citation, CSV)")
 
     cfg = yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))
